@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        let a = {
+            "100": "John",
+            "101": "Mary",
+            "103": "Allen"
+        }
+        // console.log(Object.keys(a));
+        // console.log(getName('101'));
+
+        for (let k in a) {
+            console.log(k);
+            console.log(a[k]);
+        }
+
+        function getName(m_id) {
+            return a[m_id];
+        }
+    </script>
+</body>
+
+</html>

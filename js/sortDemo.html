@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Array Sort</h2>
+    <p>Click the button (again and again) to sort the array in random order.</p>
+
+    <button onclick="show()">Try it</button>
+    <p id="demo"></p>
+
+    <script>
+        const points = ["abcd", "ab", "abc"];
+
+        function show() {
+            myFunction(points);
+
+            document.getElementById("demo").innerHTML = points;
+        }
+
+        function myFunction(a) {
+            a[0]=100;
+            a[1]=200;
+        }
+    </script>
+
+</body>
+
+</html>
