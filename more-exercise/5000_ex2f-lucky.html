@@ -85,9 +85,7 @@
             //body reference 
             var body = document.getElementById("Table");
 
-            // create elements <table> and a <tbody>
             var tbl = document.createElement("table");
-            var tblBody = document.createElement("tbody");
 
             var num = "";
 
@@ -107,19 +105,15 @@
                     row.appendChild(cell);
                 }
 
-                tblBody.appendChild(row);
+                tbl.appendChild(row);
             }
 
-            // append the <tbody> into the <table>
-            tbl.appendChild(tblBody);
-            // put <table> in the <body>
             body.appendChild(tbl);
         }
 
         function showColorTable() {
             var body = document.getElementById("ColorTable");
             var tbl = document.createElement("table");
-            var tblBody = document.createElement("tbody");
             var row = document.createElement("tr");
 
             for (var i = 0; i < bgColor.length; i++) {
@@ -131,8 +125,7 @@
                 cell.appendChild(tNode);
                 row.appendChild(cell);
             }
-            tblBody.appendChild(row);
-            tbl.appendChild(tblBody);
+            tbl.appendChild(row);
             body.appendChild(tbl);
         }
     </script>
