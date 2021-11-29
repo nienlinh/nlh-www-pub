@@ -70,8 +70,6 @@
 
         // 讀取 win 二維陣列，依據他們出現的次數，更新 lucky table
         function set_luckyTable() {
-            var w = 1;
-            var sum = 0;
             for (week of win) {
                 for (prize in week) {
                     for (winner of week[prize]) {
